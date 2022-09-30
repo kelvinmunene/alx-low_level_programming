@@ -1,20 +1,21 @@
 #include "main.h"
-
 /**
- * *_strcpy - copy strg to another string
- * @dest: pointer
- * @src: poiter
- * Return: numbers dest
+ *_strcpy - Copy paste String
+ *@dest: destination
+ *@src: source
+ *Return: dest
  */
 
 char *_strcpy(char *dest, char *src)
 {
-	int i;
+	int inc = 0;
 
-	for (i = 0; src[i] != '\0'; i++)
+	while (*(src + inc) != '\0')
 	{
-		dest[i] = src[i];
+	*(dest + inc) = *(src + inc);
+	inc++;
 	}
-	dest[i] = '\0';
+	*(dest + inc) = '\0';
+
 	return (dest);
 }

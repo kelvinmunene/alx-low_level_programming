@@ -1,16 +1,14 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
- * _isalpha - check the code for Holberton School students.
- *
- * @c: is c an integer argument
- *
- * Return: Always 0.
+ * _isalpha - checks whether alphabets character
+ * @c: int
+ * description - return 1 if upper or lower
+ * Return: 1 if alphabet 0 otherwise
  */
-
 int _isalpha(int c)
 {
-
 	if (c >= 97 && c <= 122)
 	{
 		return (1);
@@ -19,5 +17,9 @@ int _isalpha(int c)
 	{
 		return (1);
 	}
-	return (0);
+	else
+	{
+		return (0);
+	}
 }
+
